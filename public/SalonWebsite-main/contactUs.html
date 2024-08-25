@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+    
+            table, th, td {
+                border: hidden;
+            }
+    
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="jsfile.js"></script>
+        <header >
+            <nav>
+                <a href="home.html"><img src="logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                            <a href="#">SERVICES</a>
+                            <ul class="submenu">
+                                <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                                    <a id="hair_button" href="#">HAIR</a>
+                                    <ul id="hair_menu" class="lvl3menu">
+                                        <li><a href="curly.html">CURLY</a></li>
+                                        <li><a href="styling.html">STYLING</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="nails.html">NAILS</a></li>
+                                <li><a href="makeup.html">MAKEUP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactUs.html"> CONTACT US</a></li>
+                     <!--<li><a href="LoginAndSignup.html">LOGIN</a></li>--> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <table>
+            <tr>
+                <!-- First Column -->
+                <td style="width: 70%;">
+                    <section>
+                        <br><br><br>
+                        <h1 style="text-align: center; font-size: xxx-large; color:  rgb(71, 43, 33);">Contact Us</h1>
+                        <div class="contactUs">
+                            <h3>Have any questions or inquiries? Feel free to reach out to us using the form below:</h3><br>
+                            <form id="contact-form" method="post" onsubmit="ContactUsForm(event)">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required="">
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required="">
+                                </div><br>
+                                <div class="form-group">
+                                    <label for="message">Message:</label><br><br>
+                                    <textarea id="message" name="message" required="" style="height: 300px; width:600px"></textarea>
+                                </div>
+                                <button type="submit" class="submit-button">Submit</button>
+                            </form>
+                        </div><br><br><br><br>
+                    </section>
+                </td>
+        
+                <!-- Second Column -->
+                <td style="width: 30%;">
+                    <section>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d268272.1490429456!2d31.49978437171598!3d29.840285376992934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841cc890de58f%3A0x210b50ec68283cc7!2sThe%20ink%20boy!5e0!3m2!1sen!2seg!4v1701529503523!5m2!1sen!2seg" width="700" height="650" style="border:0; padding-right: 100px; padding-top: 75px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                        
+                        <br><br><br><br><br><br>
+                    </section>
+                </td>
+            </tr>
+        </table>
+        
+        <footer>
+            <div class="con">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.jpeg" alt="Facebook"></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><img src="footer/twitter.jpeg" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="footer/instagram.jpeg" alt="Instagram"></a>
+                  <a href="mailto:abcd@yahoo.com" target="_blank"><img src="footer/Email.jpeg" alt="Email"></a>
+                </div>
+                <div class="trademarks">
+                  All trademarks are the property of Nadinnah Salon.
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Nadinnah Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

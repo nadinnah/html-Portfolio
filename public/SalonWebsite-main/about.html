@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .outer{
+                overflow:scroll;
+                width:100%;
+            }
+            .outer .inner{
+                width:2425px;
+            }
+            .outer .inner div.box{
+                background-color: rgb(71, 43, 33);
+                width:400px;
+                height:700px;
+                float:left;
+                margin:0 4px 0 0;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <script src="jsfile.js"></script>
+        
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <header >
+            <nav>
+                <a href="home.html"><img src="logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                            <a href="#">SERVICES</a>
+                            <ul class="submenu">
+                                <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                                    <a id="hair_button" href="#">HAIR</a>
+                                    <ul id="hair_menu" class="lvl3menu">
+                                        <li><a href="curly.html">CURLY</a></li>
+                                        <li><a href="styling.html">STYLING</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="nails.html">NAILS</a></li>
+                                <li><a href="makeup.html">MAKEUP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactUs.html"> CONTACT US</a></li>
+                     <!--<li><a href="LoginAndSignup.html">LOGIN</a></li>--> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            
+                <div class="colored-box" style="background-color:  #f9f8f8;">
+                    <h1 id="aboutHeading" style="text-align: center; font-size: xxx-large; color:  rgb(71, 43, 33);" 
+    onmouseover="handleMouseOver('aboutHeading')" 
+    onmouseout="handleMouseOut('aboutHeading')">About Us</h1>
+                    <br>
+                    <article>
+                        <button onclick="toggleVisibility('aboutText')">Hide Text</button>
+                        <p id="aboutText" class="colored-box" onclick="toggleTextColor('aboutText')">
+        Hello, I'm Nadinnah, the proud owner of this extraordinary salon that's redefining beauty standards. With a deep passion for the 
+        artistry of hair, makeup, and nails, I've created a haven where style meets individuality. My journey in the beauty industry has 
+        been a remarkable exploration of trends, techniques, and, most importantly, the unique preferences of my diverse clientele. 
+        In my salon, it's not just about providing services; it's about crafting experiences that leave a lasting impression. I stay at the 
+        forefront of the industry, ensuring that Nadinnah Salon is a place where innovation and creativity thrive. Every visit to my salon 
+        is an opportunity for clients to discover their unique beauty and express themselves in ways they might not have imagined. I believe 
+        in the transformative power of beauty and the confidence it brings. Nadinnah Salon is more than a business; it's a reflection of my 
+        dedication to providing exceptional service, personalized care, and a welcoming environment. <br> <br>
+        Come, experience the magic of Nadinnah Salon, where I, Nadinnah, invite you to embrace your individuality and let your beauty shine. At Nadinnah Salon, I've curated a team of skilled professionals who share my commitment to excellence. Our stylists are not just experts in their craft; they are artists 
+        dedicated to bringing out the best in each client. We understand that beauty is subjective and unique to every individual, so we 
+        take the time to listen, consult, and collaborate to achieve the desired look. In addition to our exceptional hair services, we take 
+        pride in our makeup and nail artistry. Whether it's a bold and glamorous makeover or a subtle, natural enhancement, our makeup artists 
+        have a keen eye for detail. Our nail technicians, on the other hand, turn nails into canvases, creating stunning designs that reflect 
+        the latest trends or the client's personal style. The ambiance at Nadinnah Salon is carefully designed to provide a retreat from the 
+        hustle and bustle of everyday life. It's not just a salon; it's a sanctuary where clients can relax, rejuvenate, and leave feeling not 
+        only beautiful on the outside but confident and empowered from within. I invite you to be part of the Nadinnah Salon experience, where 
+        passion, skill, and artistry come together to redefine beauty.<br> <br>
+                
+        My journey in the world of beauty and styling began with a passion for creativity and a deep appreciation for the transformative power 
+        of hair, makeup, and nails. Early on, I immersed myself in the artistry of styling, constantly seeking inspiration and refining my 
+        techniques. After completing formal training and gaining valuable hands-on experience, I embarked on a mission to create a space where 
+        art and beauty intersect seamlessly. The inception of Nadinnah Salon wasn't just a business venture; it was the realization of a dream. 
+        Drawing on my experiences, I envisioned a salon that goes beyond the conventional, offering a holistic approach to beauty. From the very 
+        beginning, the goal has been to provide a haven where clients can not only receive top-notch services but also be part of an experience 
+        that nurtures self-expression and confidence. Over the years, Nadinnah Salon has grown into a thriving community of talented professionals,
+        each contributing their unique skills to our collective vision. Our journey together is a testament to the dedication we have to our craft 
+        and the satisfaction of seeing our clients leave with smiles on their faces. As we continue to evolve and stay ahead of industry trends, 
+        our commitment to excellence remains unwavering, ensuring that every visit to Nadinnah Salon is a memorable and uplifting experience.
+    </p>
+    </article>
+    <br>
+    <button onclick="showMessage()">Send Us Your Review</button>
+      
+</div>
+</section>
+<section>
+    
+<div class="outer">
+    <div class="inner">
+        <div class="box">
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+        <div class="box">
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+        <div class="box">
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+        <div class="box">
+            
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+        <div class="box">
+           
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+        <div class="box">
+            
+            <video width="400px" height="700px" autoplay loop muted>
+                <source src="tiktok/tiktokTut6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </div>
+    </div>
+</div>
+       
+  
+</section>
+        <footer>
+            <br><br><br><br>
+            <div class="con">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.jpeg" alt="Facebook"></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><img src="footer/twitter.jpeg" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="footer/instagram.jpeg" alt="Instagram"></a>
+                  <a href="mailto:abcd@yahoo.com" target="_blank"><img src="footer/Email.jpeg" alt="Email"></a>
+                </div>
+                <div class="trademarks">
+                  All trademarks are the property of Nadinnah Salon.
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Nadinnah Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

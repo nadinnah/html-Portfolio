@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .service-item{
+                text-align: center;
+            }
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 16px;
+                margin-top: 20px;
+                padding: 10px;
+            }
+    
+            .gallery img {
+                
+                width: 270px;
+                height: 300px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .gallery img:hover {
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="jsfile.js"></script>
+        <header >
+            <nav>
+                <a href="home.html"><img src="logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                            <a href="#">SERVICES</a>
+                            <ul class="submenu">
+                                <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                                    <a id="hair_button" href="#">HAIR</a>
+                                    <ul id="hair_menu" class="lvl3menu">
+                                        <li><a href="curly.html">CURLY</a></li>
+                                        <li><a href="styling.html">STYLING</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="nails.html">NAILS</a></li>
+                                <li><a href="makeup.html">MAKEUP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactUs.html"> CONTACT US</a></li>
+                     <!--<li><a href="LoginAndSignup.html">LOGIN</a></li>--> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="services">
+            <br><br><br>
+            <h1 style="text-align: center; font-size: xxx-large; color:  rgb(71, 43, 33);">Curly Hair Services</h1>
+            <div class="gallery">
+                <img src="curls/pic1.jpeg" alt="hair look">
+                <img src="curls/pic11.jpeg" alt="hair look">
+                <img src="curls/pic2.jpeg" alt="hair look">
+                <img src="curls/pic22.jpeg" alt="hair look">
+                <img src="curls/pic3.jpeg" alt="hair look">
+                <img src="curls/pic33.jpeg" alt=" hair look">
+                <img src="curls/pic4.jpeg" alt=" hair look">
+                <img src="curls/pic44.jpeg" alt="hair look">
+                <img src="curls/pic5.jpeg" alt=" hair look">
+                <img src="curls/pic55.jpeg" alt=" hair look">
+            </div>
+            <br>
+            <br>
+
+            <section class="menu" style="text-align: center;">
+                <article class="service">
+                    <h2>Curl Shaping</h2>
+                    <p>Our expert stylists will shape your curls to enhance their natural beauty and bring out the best in your unique texture.</p>
+                </article><br>
+        
+                <article class="service">
+                    <h2>Hydrating Treatments</h2>
+                    <p>Indulge your curls with our nourishing hydrating treatments designed to add moisture and vitality to your hair.</p>
+                </article><br>
+        
+                <article class="service">
+                    <h2>Curly Haircut</h2>
+                    <p>Experience a customized curly haircut tailored to your hair's specific needs, ensuring a perfect shape for your curls.</p>
+                </article><br>
+        
+                <article class="service">
+                    <h2>Defined Curls Styling</h2>
+                    <p>Transform your curls with our styling expertise, leaving you with beautifully defined and bouncy curls.</p>
+                </article><br>
+        
+                <article class="service">
+                    <h2>Deep Conditioning</h2>
+                    <p>Revitalize your curls with our deep conditioning treatments, leaving your hair feeling soft, shiny, and healthy.</p>
+                </article><br><br><br>
+        
+        
+            </section>
+        <footer>
+            <div class="con">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.jpeg" alt="Facebook"></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><img src="footer/twitter.jpeg" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="footer/instagram.jpeg" alt="Instagram"></a>
+                  <a href="mailto:abcd@yahoo.com" target="_blank"><img src="footer/Email.jpeg" alt="Email"></a>
+                </div>
+                <div class="trademarks">
+                  All trademarks are the property of Nadinnah Salon.
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Nadinnah Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

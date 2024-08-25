@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&display=swap" rel="stylesheet">
+        <title>Salon Reservation</title>
+    </head>
+    <body>
+        
+        <header >
+            <nav>
+                <a href="home.html"><img src="logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                            <a href="#">SERVICES</a>
+                            <ul class="submenu">
+                                <li><span class="DownIcon" style="size: 20px; color: #fff;"><ion-icon name="arrow-dropdown"></ion-icon></span>
+                                    <a id="hair_button" href="#">HAIR</a>
+                                    <ul id="hair_menu" class="lvl3menu">
+                                        <li><a href="curly.html">CURLY</a></li>
+                                        <li><a href="styling.html">STYLING</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="nails.html">NAILS</a></li>
+                                <li><a href="makeup.html">MAKEUP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactUs.html"> CONTACT US</a></li>
+                     <!--<li><a href="LoginAndSignup.html">LOGIN</a></li>--> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="header">   
+            <div class="wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form id=lgn action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input id="mail1" type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                            <input id="password1" type="password" required >
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#" style="color: #f9f8f8;">Forgot Password?</a>
+                        </div>
+                        <button type="submit"class="btn" id="loginBtn">Login</button>
+                        <div class="login-register ">
+                            <p>Not a member?  <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="form-box Register">
+                    
+                    <h2>Registration</h2>
+                    <form id="rgstr" action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input id="username" type="username" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input id="mail"type="text" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                            <input id="password" type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" required>I agree to the terms & conditions</label>
+                           
+                        </div>
+                        <button type="submit"class="btn" id="registerBtn">Register</button>
+                        <div class="login-register ">
+                            <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+        <div class="text-box">
+            <h1>You’ll Love What You See</h1>
+            <p>From hair to nails to even your makeup, let your style do the talking. Expect the best. Live life on the edge. Quality, service, atmosphere, and nothing less.<br> Nadinnah salon represents art, elegance, and cutting-edge trends.  </p>
+            <button class="hero-btn" id="bookNowBtn">BOOK NOW</button>
+
+            <!-- <script>
+                // Use JavaScript to set the href attribute of the button
+                document.getElementById("bookNowBtn").href = "LoginAndSignup.html";
+            </script> -->
+        </div>
+        </section>
+        <section class="reviews">
+            
+            <h1 style="text-align: center;">Review from our customers</h1>
+            <br><br>
+            <div class="row" >
+                <div class="review-col" >
+                    
+                    <div>
+                        <p>Nailed it! Literally. Best salon for trendy nails. My beauty sanctuary!</p>
+
+                           <h3> — TrendSetter99</h3>
+                    </div>
+                </div>
+                <div class="review-col">
+                   
+                    <div>
+                        <p>One-stop beauty spot! Amazing nail art, flawless makeup, and hair that turns heads. Seriously, this salon is my beauty secret.
+
+                           </p>
+
+                           <h3>  — ChicDiva86</h3>
+                    </div>
+                </div>
+                <div class="review-col">
+                   
+                    <div>
+                        <p>This salon is a game-changer! Nails, makeup, and hair - they aced it all. Friendly staff, trendy vibes, and my go-to for a glam fix. Love it!</p>
+
+                           <h3> — StylishBabe21</h3>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <footer>
+            <div class="con">
+                <div class="social-media">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.jpeg" alt="Facebook"></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><img src="footer/twitter.jpeg" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="footer/instagram.jpeg" alt="Instagram"></a>
+                  <a href="mailto:abcd@yahoo.com" target="_blank"><img src="footer/Email.jpeg" alt="Email"></a>
+                </div>
+                <div class="trademarks">
+                  All trademarks are the property of Nadinnah Salon.
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Nadinnah Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="jsfile.js"></script>
+    </body>
+</html>
