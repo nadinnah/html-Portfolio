@@ -1,0 +1,529 @@
+
+*{  
+    margin:0;
+    padding: 0;  
+    box-sizing: border-box;  
+ }
+body{
+   background-color: #f9f8f8;
+}
+
+/* Footer styles */
+footer {
+   background-color: #f9f8f8;
+   color:rgb(71, 43, 33);
+   padding: 20px 0;
+   text-align: center;
+ }
+ .social-media {
+   margin-bottom: 20px;
+ }
+ .social-media a {
+   display: inline-block;
+   margin: 0 10px;
+ }
+ .social-media img {
+   width: 32px;
+   height: 32px;
+   vertical-align: middle;
+ }
+ .trademarks,
+ .copyright {
+   font-size: 14px;
+   margin-top: 10px;
+ }
+ .marquee-con {
+   width: 100%;
+   overflow: hidden;
+   white-space: nowrap;
+ }
+ .marquee-content {
+   display: inline-block;
+   animation: marquee 20s linear infinite;
+ }
+ @keyframes marquee {
+   0% { transform: translateX(100%); }
+   100% { transform: translateX(-100%); }
+ }
+ .slideshow-con{
+
+   position: relative;
+   max-width: 1000px; /* Adjust the max-width as needed */
+   margin: 0 auto; /* Center align the container horizontally */
+ }
+   /* Places Section */
+   .places-section {
+   background-color: #f6f6f6;
+   padding: 40px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+/* body{
+  
+   justify-content: center;
+   min-height:100vh;
+   background-size:cover;
+   background-position: center;
+
+
+}
+ header{
+   position: fixed;
+   top:0;
+   left:0;
+   width:100%;
+   
+   justify-content: space-between;
+   align-items: center;
+   z-index: 99;
+ } */
+
+ .header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/salon.webp);
+    background-position: center;
+    background-size: cover;
+    
+    position:relative;
+ }
+ 
+ nav{
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(35, 26, 26, 0.914);
+ }
+ nav img{
+    width: 150px;
+ }
+
+ .nav-links{
+    flex: 1;
+    text-align: right;
+ }
+ 
+ .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+ }
+ .nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 15px;
+ }
+ .nav-links ul li::after{
+   content:'';
+   width: 0%;
+   height: 2px;
+   background:#c9bfbe ;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+ }
+ .nav-links ul li:hover::after{
+   width: 100%;
+ }
+
+ 
+ 
+ section .text-box{
+   width: 90%;
+ }
+ .submenu{
+   position: absolute;
+    width: auto;
+    background-color:rgba(56, 48, 48, 0.91);
+    box-shadow: 0 20px 45px #00000020;
+    opacity: 0;
+    z-index: 1;
+    transition: all ease 0.5s;
+    left: 50%; /* Center the submenu horizontally */
+    transform: translateX(-50%); /* Center the submenu horizontally */
+    top: 50px;
+    text-align: left;
+ }
+ .lvl3menu {
+   position: absolute;
+   left: 100%;
+   width:140px;
+   top:0;
+   background-color:rgba(56, 48, 48, 0.91);
+   z-index: 2; 
+   display: none;
+}
+.submenu li:hover .lvl3menu {
+   display: block;
+}
+
+ header ul .submenu{
+   position:absolute;
+   width: auto;
+   background-color: rgba(56, 48, 48, 0.91);;
+   box-shadow: 0 20px 45px #00000020;
+   margin-top: -50px;
+   opacity: 0;
+   z-index: -999;
+   transition: all ease 0.5s;
+ }
+ header ul li:hover .submenu{
+   z-index: 99;
+   opacity: 1;
+   margin-top: 0;
+ }
+ header ul .submenu li{
+   margin: 0;
+   width: auto;
+ }
+
+ header ul .submenu li a{
+   padding:10px 10px;
+   display: inline-block;
+   width: auto;
+ }
+ 
+ .nav-links ul li.services-item:hover::after {
+   width: 0; /* Set the width to 0 to remove the hover effect */
+}
+
+/* Add a class to the SERVICES li element to prevent it from being a link */
+.nav-links ul li.services-item a {
+    pointer-events: none; /* Disable the link behavior */
+    cursor: default; /* Change the cursor to default */
+    color: #fff; /* Set the color to match the non-hover state */
+}
+
+.text-box{
+   width: 90%;
+   color:#fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 62px;
+}
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 16px;
+   color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid  #fff;
+  padding:10px 25px; 
+  font-size: 13px;
+  background: transparent;
+  position:relative;
+  cursor:pointer;
+  text-align: center;
+}
+.hero-btn:hover{
+   border: 1px solid rgba(92, 66, 66, 0.825);
+   background-color: rgba(92, 66, 66, 0.825);
+   transition:1s;
+}
+
+.wrapper{
+   position: relative;
+   width: 400px;
+   height: 480px;
+   background: transparent;
+   border: 2px solid rgba(255,255,255,.5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 30px rgba(0,0,0,.5);
+   display: flex;
+   top: 50%;
+   left: 37%;
+   justify-content: center;
+   align-items:center;
+   overflow: hidden;
+   transform:scale(0);
+   transition: transform .5s ease, height .2s ease;
+   z-index: 1;
+}
+.wrapper.active-popup{
+   transform:scale(1);
+}
+.wrapper.active{
+   height:520px;
+}
+.wrapperbooking{
+   
+   width: 80%;
+   height: 80%;
+   background: transparent;
+   border: 2px solid rgba(255,255,255,.5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 30px rgba(0,0,0,.5);
+   display: flex;
+   /*overflow: hidden;*/
+}
+
+.wrapper .form-box{
+   width: 100%;
+   padding: 40px;
+}
+.wrapper .form-box.login{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+   transition: none;
+   transform: translateX(-400px);
+}
+.wrapper .form-box.Register{
+   position: absolute;
+   transition: none;
+   transform: translateX(400px);
+}
+.wrapper.active .form-box.Register{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+
+.form-box h2{
+   font-size: 2em;
+   color: #f9f8f8;
+   text-align: center;
+}
+
+.input-box{
+   position: relative;
+   width: 100%;
+   height: 50px;
+   border-bottom: 2px solid rgb(71, 43, 33) ;
+   margin: 30px 0;
+
+}
+
+.input-box label{
+   position: absolute;
+   top: 50%;
+   left:5px;
+   transform: translateY(-50);
+   font-size: 1em;
+   color: #f9f8f8;
+   font-weight: 500;
+   pointer-events: none;
+   transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top: -5px;
+}
+
+.input-box input{
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border:none;
+   outline: none;
+   font-size:1em;
+   color: #f9f8f8;
+   font-weight:600;
+   padding:0 35px 0 5px;
+}
+.input-box .icon{
+   position:absolute;
+   right: 8px;
+   font-size: 1.2em;
+   color: #f9f8f8;
+   line-height: 57px;
+}
+.remember-forgot{
+   font-size:.9em;
+   color:#f9f8f8;
+   font-weight:500;
+   margin: -15px 0 15px;
+   display:flex;
+   justify-content: space-between;
+}
+
+.remember-forgot label input{
+   accent-color:#f9f8f8;
+   margin-right:3px;
+}
+
+.remember-forgot label input{
+   color: #f9f8f8;
+   text-decoration: none;
+}
+.remember-forgot a:hover{
+   text-decoration: underline;
+}
+
+.btn{
+   width: 100%;
+   height:45px;
+   background:rgb(71, 43, 33);
+   border:none;
+   outline:none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-size: 1em;
+   color: #fff;
+   font-weight:500;
+}
+.login-register{
+   font-size:.9em;
+   color:#f9f8f8;
+   text-align: center;
+   font-weight: 500;
+   margin:25px 0 10px;;
+}
+.login-register p a{
+   color:#f9f8f8;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.login-register p a:hover{
+   text-decoration: underline;
+}
+.wrapper .icon-close{
+   position: absolute;
+   top:0;
+   right:0;
+   width:45px;
+   height:45px;
+   background:rgb(71, 43, 33);
+   font-size:2em;
+   color: #fff;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   border-bottom-left-radius: 20px;
+   cursor:pointer;
+   z-index: 1;
+
+}
+.container {
+   width: 400px;
+   margin: 50px auto;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+label {
+   margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+   margin-bottom: 15px;
+   padding: 15px; /* Smaller padding for consistency */
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+/* Specific size for the first name and last name input boxes */
+#first_name,
+#last_name, #contact_number, #email{
+   width: 30%; /* Adjusted width for both first and last name */
+}
+#datetime{
+   width: 15%;
+}
+
+/* Center the select button */
+select {
+   width: 18%;
+   margin: 0 auto;
+}
+
+textarea {
+   height: 100px;
+   width: 50%;
+}
+
+button {
+   padding: 10px;
+   background-color:  rgb(71, 43, 33);
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 10%;
+}
+
+button:hover {
+   background-color:  rgb(71, 43, 33);
+}
+.logo {
+   text-align: center; /* Center the logo */
+}
+/* .header {
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/salon.webp);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+} */
+
+.contactUs{
+   align-self: center;
+   padding: 50px;
+}
+
+.colored-box {
+   background-color:  rgba(35, 26, 26, 0.914); /* Choose your desired background color */
+   padding: 50px; /* Adjust the padding as needed */
+   margin: 20px 0; /* Optional: Add margin for spacing */
+   line-height: 30px;
+}
+
+.colored-box p {
+   color: #fff;
+   font-size: large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 100px; /* Note: 'font-weight' is a numerical value, not '100px' */
+   text-align: justify;
+}
+
+.reviews{
+width: 80%;
+margin:auto;
+padding-top: 100px;
+text-align: center;
+}
+.review-col{
+   
+   flex-basis: 44%;
+   border-radius: 10px;
+   margin-bottom: 5%;
+   text-align: left;
+   background:  #fff;
+   padding: 25px;
+   cursor:pointer;
+   display: flex;
+
+
+}
+
+#hair_menu {
+   display: block; /* Change 'none' to 'block' to make it visible */
+}
+
+/* If you want to hide it on specific pages, you can override the style for those pages */
+.page-specific-class #hair_menu {
+   display: none;
+}
